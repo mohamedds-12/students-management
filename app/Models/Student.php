@@ -11,6 +11,8 @@ class Student extends Model
 
     protected $guarded = [];
 
+    protected $with = ['section', 'class'];
+
     /**
      * Get the class that owns the Student
      *
@@ -28,6 +30,6 @@ class Student extends Model
      */
     public function section()
     {
-        return $this->belongsTo(User::class, 'section_id');
+        return $this->belongsTo(Section::class, 'section_id');
     }
 }

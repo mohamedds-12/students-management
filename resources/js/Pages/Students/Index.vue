@@ -1,7 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
-import { defineComponent } from 'vue';
 // import type { Header, Item } from "vue3-easy-data-table";
 
 
